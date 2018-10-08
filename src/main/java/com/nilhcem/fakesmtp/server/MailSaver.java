@@ -130,7 +130,7 @@ public final class MailSaver extends Observable {
 	 * @return the converted string object, containing data from the InputStream passed in parameters.
 	 */
 	private String convertStreamToString(InputStream is) {
-		final long lineNbToStartCopy = 4; // Do not copy the first 4 lines (received part)
+		final long lineNbToStartCopy = 0; // Do not copy the first 4 lines (received part)
 		BufferedReader reader = new BufferedReader(new InputStreamReader(is, Charset.forName(I18n.UTF8)));
 		StringBuilder sb = new StringBuilder();
 
